@@ -15,9 +15,9 @@ We are committed to working with you through this issue.  Your Microsoft account
  
 # Information to assist you and your teams
  
-- [March 2, 2021 Security Update Release - Release Notes - Security Update Guide - Microsoft](https://msrc.microsoft.com/update-guide/releaseNote/2021-Mar)
-
-- [CVE-2021-26412](https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2021-26412)
+|[March 2, 2021 Security Update Release - Release Notes - Security Update Guide - Microsoft](https://msrc.microsoft.com/update-guide/releaseNote/2021-Mar)|
+-----------
+|[CVE-2021-26412](https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2021-26412)|
 
 - [CVE-2021-26854](https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2021-26854)
 
