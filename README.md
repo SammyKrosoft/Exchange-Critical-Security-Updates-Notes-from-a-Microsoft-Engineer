@@ -67,6 +67,6 @@ Get-EventLog -LogName Application -Source "MSExchange Unified Messaging" -EntryT
 
 - Directory: `C:\Program Files\Microsoft\Exchange Server\V15\Logging\ECP\Server`
 
-```
+```powershell
 Select-String -Path "$env:PROGRAMFILES\Microsoft\Exchange Server\V15\Logging\ECP\Server\*.log" -Pattern 'Set-.+VirtualDirectory'
 ```
