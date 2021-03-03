@@ -15,24 +15,24 @@ We are committed to working with you through this issue.  Your Microsoft account
  
 # Information to assist you and your teams
  
-[March 2, 2021 Security Update Release - Release Notes - Security Update Guide - Microsoft](https://msrc.microsoft.com/update-guide/releaseNote/2021-Mar)
+- [March 2, 2021 Security Update Release - Release Notes - Security Update Guide - Microsoft](https://msrc.microsoft.com/update-guide/releaseNote/2021-Mar)
 
-[CVE-2021-26412](https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2021-26412)
+- [CVE-2021-26412](https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2021-26412)
 
-[CVE-2021-26854](https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2021-26854)
+- [CVE-2021-26854](https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2021-26854)
 
-[CVE-2021-26855](https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2021-26855)
+- [CVE-2021-26855](https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2021-26855)
 
-[CVE-2021-26857](https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2021-26857)
+- [CVE-2021-26857](https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2021-26857)
 
-[CVE-2021-26858](https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2021-26858)
+- [CVE-2021-26858](https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2021-26858)
 
-[CVE-2021-27065](https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2021-27065)
+- [CVE-2021-27065](https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2021-27065)
 
-[CVE-2021-27078](https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2021-27078)
+- [CVE-2021-27078](https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2021-27078)
 
  
  
-[Exchange Team Blog Post - Microsoft Tech Community](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-march-2021-exchange-server-security-updates/ba-p/2175901)
-[Microsoft Security Response Center release - Microsoft Tech Community](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-march-2021-exchange-server-security-updates/ba-p/2175901)
-[CSS Support: https://support.microsoft.com/](https://support.microsoft.com/)
+- [Exchange Team Blog Post - Microsoft Tech Community](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-march-2021-exchange-server-security-updates/ba-p/2175901)
+- [Microsoft Security Response Center release - Microsoft Tech Community](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-march-2021-exchange-server-security-updates/ba-p/2175901)
+- [CSS Support: https://support.microsoft.com/](https://support.microsoft.com/)
