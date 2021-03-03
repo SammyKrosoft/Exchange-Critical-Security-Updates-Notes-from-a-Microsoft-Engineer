@@ -25,7 +25,7 @@ We are committed to working with you through this issue.  Your Microsoft account
 |[CVE-2021-27078](https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2021-27078)|
  
 - [Exchange Team Blog Post - Microsoft Tech Community - Released: March 2021 Exchange Server Security Updates and patch download links](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-march-2021-exchange-server-security-updates/ba-p/2175901)
-- [Microsoft Security Response Center release - Microsoft Tech Community](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-march-2021-exchange-server-security-updates/ba-p/2175901)
+- [Microsoft Security Response Center release - Multiple Security Updates Released for Exchange Server](https://msrc-blog.microsoft.com/2021/03/02/multiple-security-updates-released-for-exchange-server/)
 - [CSS Support: https://support.microsoft.com/](https://support.microsoft.com/)
 
 # Practical notes
