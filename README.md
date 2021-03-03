@@ -27,3 +27,46 @@ We are committed to working with you through this issue.  Your Microsoft account
 - [Exchange Team Blog Post - Microsoft Tech Community](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-march-2021-exchange-server-security-updates/ba-p/2175901)
 - [Microsoft Security Response Center release - Microsoft Tech Community](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-march-2021-exchange-server-security-updates/ba-p/2175901)
 - [CSS Support: https://support.microsoft.com/](https://support.microsoft.com/)
+
+# Practical notes
+
+## Use CMD instead of Powershell to install updates
+
+Always install using elevated CMD prompt.  Ensure that all the Exchange tools are closed on the server (else that can lock up the process).  Avoid using PowerShell due to what it does to path statements
+
+## It takes 30-45 minutes to deploy
+
+## Check Exchange logs to check if you've been compromised
+
+### CVE-2021-26855 - check HTTPProxy logs
+
+- usually located in `%PROGRAMFILES%\Microsoft\Exchange Server\V15\Logging\HttpProxy`
+
+- Use powershell or LogParser to browse and find:
+
+
+```powershell
+Import-Csv -Path (Get-ChildItem -Recurse -Path "$env:PROGRAMFILES\Microsoft\Exchange Server\V15\Logging\HttpProxy" -Filter '*.log').FullName | Where-Object {  $_.AuthenticatedUser -eq '' -and $_.AnchorMailbox -like 'ServerInfo~*/*' } | select DateTime, AnchorMailbox
+```
+
+### CVE-2021-26858 - OAB generator log directory
+
+- Directory: %PROGRAMFILES%\Microsoft\Exchange Server\V15\Logging\OABGeneratorLog\*.log
+
+```
+findstr /snip /c:"Download failed and temporary file" "%PROGRAMFILES%\Microsoft\Exchange Server\V15\Logging\OABGeneratorLog\*.log"
+```
+
+### CVE-2021-26857 - Check application event logs
+
+```powershell
+Get-EventLog -LogName Application -Source "MSExchange Unified Messaging" -EntryType Error | Where-Object { $_.Message -like "*System.InvalidCastException*" }
+```
+
+### CVE-2021-27065 - ECP log files
+
+- Directory: `C:\Program Files\Microsoft\Exchange Server\V15\Logging\ECP\Server`
+
+```
+Select-String -Path "$env:PROGRAMFILES\Microsoft\Exchange Server\V15\Logging\ECP\Server\*.log" -Pattern 'Set-.+VirtualDirectory'
+```
