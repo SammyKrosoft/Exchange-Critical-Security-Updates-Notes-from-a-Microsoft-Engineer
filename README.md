@@ -14,11 +14,11 @@ https://www.microsoft.com/security/blog/2021/03/02/hafnium-targeting-exchange-se
 We are committed to working with you through this issue.  Your Microsoft account and support teams have been fully mobilized.  Please let me know if you need additional help.
  
 |Information to assist you and your teams|
------------
+--------------------------------------------
 |[March 2, 2021 Security Update Release - Release Notes - Security Update Guide - Microsoft](https://msrc.microsoft.com/update-guide/releaseNote/2021-Mar)|
------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 |[CVE-2021-26412](https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2021-26412)|
------------
+---------------------------------------------------------------------------------------------------
 |[CVE-2021-26854](https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2021-26854)|
 -----------
 |[CVE-2021-26855](https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2021-26855)|
