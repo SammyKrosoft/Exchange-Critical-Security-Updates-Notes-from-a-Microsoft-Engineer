@@ -74,5 +74,5 @@ Select-String -Path "$env:PROGRAMFILES\Microsoft\Exchange Server\V15\Logging\ECP
 ### Better scripts to check for possible compromissions
 
 > These scripts use the above examples, but better written and cooked into nice scripts
-> 
+> One of these scripts uses the 4 detections mentionned above (CVEs check)
 > [Security scripts](https://github.com/microsoft/CSS-Exchange/tree/main/Security)
