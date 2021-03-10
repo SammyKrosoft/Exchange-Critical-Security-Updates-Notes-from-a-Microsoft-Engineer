@@ -32,9 +32,9 @@ We are committed to working with you through this issue.  Your Microsoft account
 
 ## Use CMD instead of Powershell to install updates
 
-Always install using elevated CMD prompt.  Ensure that all the Exchange tools are closed on the server (else that can lock up the process).  Avoid using PowerShell due to what it does to path statements
+**Always install using elevated CMD prompt**.  Ensure that all the Exchange tools are closed on the server (else that can lock up the process).  Avoid using PowerShell due to what it does to path statements.
 
-## It takes 30-45 minutes to deploy
+> Note that the patch takes approximately 30-45 minutes to install.
 
 ## Check Exchange logs to check if you've been compromised
 
