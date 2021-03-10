@@ -24,17 +24,30 @@ We are committed to working with you through this issue.  Your Microsoft account
 - [Microsoft Security Response Center release - Multiple Security Updates Released for Exchange Server](https://msrc-blog.microsoft.com/2021/03/02/multiple-security-updates-released-for-exchange-server/)
 - [CSS Support: https://support.microsoft.com/](https://support.microsoft.com/)
 
+## Microsoft internal web page **ExHelper** for the procedure to update your servers
+
+- Depending on the Exchange server version (2010, 2013, 2016, 2019) and update level (Roll-Up aka RU for Exchange 2010, CU aka Cumulative Update for Exchange 2013/2016/2019), there are specific steps to get your servers up to date to be able to patch these. The below web site gives you the How-To steps based on your server versions deployed on your environment:
+
+> [ExHelper - update procedure for all Exchange versions and patch level](https://aka.ms/ExHelper)
+ 
+# Patches Download Links
+
+The Exchange Team's below article contain all the links to the Exchange patches for all versions
+
+[Exchange Team Blog Post - Released: March 2021 Exchange Server Security Updates and patch download links for Exchange 2010, 2013, 2016, 2019 patches](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-march-2021-exchange-server-security-updates/ba-p/2175901)
+
+# Check Exchange logs to check if you've been compromised
+
+A script has been released by the Microsoft Support Team ([`Test-ProxyLogon.ps1`](https://github.com/microsoft/CSS-Exchange/blob/main/Security/Test-ProxyLogon.ps1)) that checks if the 4 below breaches have been exploited (CVE-2021-27065, CVE-2021-26857, CVE-2021-26858, CVE-2021-26855)
+
+> [Other security related scripts are available on the CSS-Exchange Github page](https://github.com/microsoft/CSS-Exchange/tree/main/Security)
+
 # Rhoderick Milne's collected links
 
 Also my famous colleague Rhoderick Mile collected all important links to help you out on this outbreak
 
 > [Collected Links For Hafnium – March 2021 Exchange Security Issue](https://blog.rmilne.ca/2021/03/08/collected-links-for-hafnium-march-2021-exchange-security-issue/)
 
-# Patches Download Links
-
-The Exchange Team's below article contain all the links to the Exchange patches for all versions
-
-[Exchange Team Blog Post - Released: March 2021 Exchange Server Security Updates and patch download links for Exchange 2010, 2013, 2016, 2019 patches](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-march-2021-exchange-server-security-updates/ba-p/2175901)
 
 # Practical notes
 
@@ -44,23 +57,9 @@ The Exchange Team's below article contain all the links to the Exchange patches 
 
 > Note that the patch takes approximately 30-45 minutes to install.
 
-## Useful Microsoft internal web page **ExHelper** for the procedure to update your servers
+## Details of what the Test-ProxyLogon.ps1 script checks
 
-- Depending on the Exchange server version (2010, 2013, 2016, 2019) and update level (Roll-Up aka RU for Exchange 2010, CU aka Cumulative Update for Exchange 2013/2016/2019), there are specific steps to get your servers up to date to be able to patch these. The below web site gives you the How-To steps based on your server versions deployed on your environment:
-
-> [Exchange How-To patching procedure for all supported Exchange versions aka ExHelper](https://aka.ms/ExHelper)
-
-## Check Exchange logs to check if you've been compromised
-
-### Test-ProxyLogon.ps1 script
-
-A script has been released by the Microsoft Support Team ([`Test-ProxyLogon.ps1`](https://github.com/microsoft/CSS-Exchange/blob/main/Security/Test-ProxyLogon.ps1)) that checks if the 4 below breaches have been exploited (CVE-2021-27065, CVE-2021-26857, CVE-2021-26858, CVE-2021-26855)
-
-> [Other security related scripts are available on the CSS-Exchange Github page](https://github.com/microsoft/CSS-Exchange/tree/main/Security)
-
-### Details of what the script checks
-
-#### CVE-2021-26855 - check HTTPProxy logs
+### CVE-2021-26855 - check HTTPProxy logs
 
 - this test is included in the `Test-ProxyLogon.ps1` script mentionned above
 
@@ -72,7 +71,7 @@ A script has been released by the Microsoft Support Team ([`Test-ProxyLogon.ps1`
 Import-Csv -Path (Get-ChildItem -Recurse -Path "$env:PROGRAMFILES\Microsoft\Exchange Server\V15\Logging\HttpProxy" -Filter '*.log').FullName | Where-Object {  $_.AuthenticatedUser -eq '' -and $_.AnchorMailbox -like 'ServerInfo~*/*' } | select DateTime, AnchorMailbox
 ```
 
-#### CVE-2021-26858 - OAB generator log directory
+### CVE-2021-26858 - OAB generator log directory
 
 - this test is included in the `Test-ProxyLogon.ps1` script mentionned above
 
@@ -82,7 +81,7 @@ Import-Csv -Path (Get-ChildItem -Recurse -Path "$env:PROGRAMFILES\Microsoft\Exch
 findstr /snip /c:"Download failed and temporary file" "%PROGRAMFILES%\Microsoft\Exchange Server\V15\Logging\OABGeneratorLog\*.log"
 ```
 
-#### CVE-2021-26857 - Check application event logs
+### CVE-2021-26857 - Check application event logs
 
 - this test is included in the `Test-ProxyLogon.ps1` script mentionned above
 
@@ -90,7 +89,7 @@ findstr /snip /c:"Download failed and temporary file" "%PROGRAMFILES%\Microsoft\
 Get-EventLog -LogName Application -Source "MSExchange Unified Messaging" -EntryType Error | Where-Object { $_.Message -like "*System.InvalidCastException*" }
 ```
 
-#### CVE-2021-27065 - ECP log files
+### CVE-2021-27065 - ECP log files
 
 - this test is included in the `Test-ProxyLogon.ps1` script mentionned above
 
