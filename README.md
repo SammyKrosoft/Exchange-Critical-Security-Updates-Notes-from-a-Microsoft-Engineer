@@ -28,6 +28,12 @@ A script has been released by the Microsoft Support Team ([`Test-ProxyLogon.ps1`
 
 > [Other security related scripts are available on the CSS-Exchange Github page](https://github.com/microsoft/CSS-Exchange/tree/main/Security)
  
+# Microsoft Support Emergency Response Tool (MSERT) to scan Microsoft Exchange Server
+
+- In addition to the `Test-ProxyLogon.ps1` script, you can scan the well-known folders using the *Microsoft Support Emergency Response Tool* aka *MSERT*
+
+> [Defender MERT Guidance and Download links (x86 and x64 versions)](https://github.com/microsoft/CSS-Exchange/blob/main/Security/Defender-MSERT-Guidance.md)
+ 
 # Microsoft Engineers presentation
 
 - This is a presentation summarizing how the exploit work, and what to do
