@@ -44,11 +44,11 @@ The Exchange Team's below article contain all the links to the Exchange patches 
 
 > Note that the patch takes approximately 30-45 minutes to install.
 
-## Useful Microsoft internal web page to know how to update your servers
+## Useful Microsoft internal web page to know how to update your servers : https://aka.ms/ExHelper
 
 - Depending on the Exchange server version (2010, 2013, 2016, 2019) and update level (Roll-Up aka RU for Exchange 2010, CU aka Cumulative Update for Exchange 2013/2016/2019), there are specific steps to get your servers up to date to be able to patch these. The below web site gives you the How-To steps based on your server versions deployed on your environment:
 
-> [Exchange How-To patching procedure for all supported Exchange versions](https://aka.ms/ExHelper)
+> [Exchange How-To patching procedure for all supported Exchange versions aka ExHelper](https://aka.ms/ExHelper)
 
 ## Check Exchange logs to check if you've been compromised
 
