@@ -24,7 +24,7 @@ We are committed to working with you through this issue.  Your Microsoft account
 |[CVE-2021-27065](https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2021-27065)|
 |[CVE-2021-27078](https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2021-27078)|
  
-- [Exchange Team Blog Post - Microsoft Tech Community - Released: March 2021 Exchange Server Security Updates and patch download links](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-march-2021-exchange-server-security-updates/ba-p/2175901)
+- [Exchange Team Blog Post - Released: March 2021 Exchange Server Security Updates and patch download links for Exchange 2010, 2013, 2016, 2019](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-march-2021-exchange-server-security-updates/ba-p/2175901)
 - [Microsoft Security Response Center release - Multiple Security Updates Released for Exchange Server](https://msrc-blog.microsoft.com/2021/03/02/multiple-security-updates-released-for-exchange-server/)
 - [CSS Support: https://support.microsoft.com/](https://support.microsoft.com/)
 
@@ -71,8 +71,10 @@ Get-EventLog -LogName Application -Source "MSExchange Unified Messaging" -EntryT
 Select-String -Path "$env:PROGRAMFILES\Microsoft\Exchange Server\V15\Logging\ECP\Server\*.log" -Pattern 'Set-.+VirtualDirectory'
 ```
 
-### Better scripts to check for possible compromissions
+### Other scripts to check for possible compromissions
 
-> These scripts use the above examples, but better written and cooked into nice scripts
-> One of these scripts uses the 4 detections mentionned above (CVEs check)
-> [Security scripts](https://github.com/microsoft/CSS-Exchange/tree/main/Security)
+> A script has been released by the Microsoft Support Team ([`Test-ProxyLogon.ps1`](https://github.com/microsoft/CSS-Exchange/tree/main/Security)) that checks the 4 detections mentionned above (CVE-2021-27065, CVE-2021-26857, CVE-2021-26858, CVE-2021-26855 check)
+> Other scripts are available on the CSS-Exchange Github page:
+> [CSS-Exchange Github page](https://github.com/microsoft/CSS-Exchange/tree/main/Security)
+ 
+
