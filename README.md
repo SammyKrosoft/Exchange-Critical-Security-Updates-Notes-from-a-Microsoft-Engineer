@@ -42,7 +42,7 @@ A script has been released by the Microsoft Support Team ([`Test-ProxyLogon.ps1`
 
 > [Other security related scripts are available on the CSS-Exchange Github page](https://github.com/microsoft/CSS-Exchange/tree/main/Security)
  
-# PFE presentation: Connect with Microsoft | Microsoft Exchange Server Critical Vulnerabilities!
+# Microsoft Engineers presentation
 
 - This is a presentation summarizing how the exploit work, and what to do
 
