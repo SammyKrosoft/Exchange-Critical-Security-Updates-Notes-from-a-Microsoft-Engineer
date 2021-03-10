@@ -22,7 +22,7 @@ The Exchange Team's below article contain all the links to the Exchange patches 
 
 [Exchange Team Blog Post - Released: March 2021 Exchange Server Security Updates and patch download links for Exchange 2010, 2013, 2016, 2019 patches](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-march-2021-exchange-server-security-updates/ba-p/2175901)
 
-# Script to check if you've been compromised
+# Have you been compromised ?
 
 A script has been released by the Microsoft Support Team ([`Test-ProxyLogon.ps1`](https://github.com/microsoft/CSS-Exchange/blob/main/Security/Test-ProxyLogon.ps1)) that checks if the 4 below breaches have been exploited (CVE-2021-27065, CVE-2021-26857, CVE-2021-26858, CVE-2021-26855)
 
