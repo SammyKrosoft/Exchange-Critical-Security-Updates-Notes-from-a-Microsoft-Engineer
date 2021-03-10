@@ -48,8 +48,7 @@ We are committed to working with you through this issue.  Your Microsoft account
 
 A script has been released by the Microsoft Support Team ([`Test-ProxyLogon.ps1`](https://github.com/microsoft/CSS-Exchange/tree/main/Security)) that checks if the 4 below breaches have been exploited (CVE-2021-27065, CVE-2021-26857, CVE-2021-26858, CVE-2021-26855)
 
-> Other security related scripts are available on the CSS-Exchange Github page:
-> [CSS-Exchange Github page](https://github.com/microsoft/CSS-Exchange/tree/main/Security)
+> [Other security related scripts are available on the CSS-Exchange Github page](https://github.com/microsoft/CSS-Exchange/tree/main/Security)
 
 ### CVE-2021-26855 - check HTTPProxy logs
 
