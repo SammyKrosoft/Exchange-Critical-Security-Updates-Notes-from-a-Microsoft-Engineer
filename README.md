@@ -8,7 +8,7 @@ For on-premises Exchange Servers, we ask that you direct your teams to start imm
  
 We also recommend that your security team assess whether or not the vulnerabilities were being exploited by using the Indicators of Compromise we shared here (see below **Check Exchange logs to check if you've been compromised** part)
  
-We are committed to working with you through this issue.  Your Microsoft account and support teams have been fully mobilized.  Please let me know if you need additional help.
+We are committed to working with you through this issue.  Your Microsoft account and support teams have been fully mobilized.
 
 |Information to assist you and your teams|
 |---|
@@ -26,7 +26,7 @@ We are committed to working with you through this issue.  Your Microsoft account
 
 # Rhoderick Milne's collected links
 
-Also my famous colleague Rhoderick Mile collected some links
+Also my famous colleague Rhoderick Mile collected all important links to help you out on this outbreak
 
 [Collected Links For Hafnium – March 2021 Exchange Security Issue](https://blog.rmilne.ca/2021/03/08/collected-links-for-hafnium-march-2021-exchange-security-issue/)
 
