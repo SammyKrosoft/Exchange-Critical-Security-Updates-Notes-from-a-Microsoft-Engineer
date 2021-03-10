@@ -41,6 +41,12 @@ The Exchange Team's below article contain all the links to the Exchange patches 
 A script has been released by the Microsoft Support Team ([`Test-ProxyLogon.ps1`](https://github.com/microsoft/CSS-Exchange/blob/main/Security/Test-ProxyLogon.ps1)) that checks if the 4 below breaches have been exploited (CVE-2021-27065, CVE-2021-26857, CVE-2021-26858, CVE-2021-26855)
 
 > [Other security related scripts are available on the CSS-Exchange Github page](https://github.com/microsoft/CSS-Exchange/tree/main/Security)
+ 
+# PFE presentation: Connect with Microsoft | Microsoft Exchange Server Critical Vulnerabilities!
+
+- This is a presentation summarizing how the exploit work, and what to do
+
+> https://aka.ms/ExOOB-CA
 
 # Rhoderick Milne's collected links
 
