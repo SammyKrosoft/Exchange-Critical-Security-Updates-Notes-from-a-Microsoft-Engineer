@@ -190,7 +190,7 @@ begin {
                 function Get-SuspiciousFile {
                     [CmdletBinding()]
                     param ()
-
+                    Write-host "Checking Suspicious files" -ForegroundColor Magenta
                     $zipFilter = ".7z", ".zip", ".rar"
                     $dmpFilter = "lsass.*dmp"
                     $dmpPaths = "c:\root", "$env:WINDIR\temp"
@@ -362,7 +362,7 @@ begin {
                 if (-not ($report.Cve26855.Hits.Count -or $report.Cve26857.Count -or $report.Cve26858.Count -or $report.Cve27065.Count -or $report.Suspicious.Count)) {
                     Write-Host "  Nothing suspicious detected" -ForegroundColor Green
                     Write-Host ""
-                    continue
+                    #continue
                 }
                 if ($report.Cve26855.Hits.Count -gt 0) {
                     Write-Host "  [CVE-2021-26855] Suspicious activity found in Http Proxy log!" -ForegroundColor Red
@@ -389,7 +389,7 @@ begin {
                         }
                     }
                     Write-Host ""
-                }
+                } Else {Write-Host "No suspicious activity found for CVE-2021-26855" -ForegroundColor Green}
                 if ($report.Cve26857.Count -gt 0) {
                     Write-Host "  [CVE-2021-26857] Suspicious activity found in Eventlog!" -ForegroundColor Red
                     Write-Host "  $(@($report.Cve26857).Count) events found"
@@ -409,7 +409,7 @@ begin {
                         Start-Process wevtutil -ArgumentList "epl Software $($LogFileOutPath)\CVE26857\Application.evtx"
                     }
                     Write-Host ""
-                }
+                } Else {Write-Host "No suspicious activity found for CVE-2021-26857" -ForegroundColor Green}
                 if ($report.Cve26858.Count -gt 0) {
                     Write-Host "  [CVE-2021-26858] Suspicious activity found in OAB generator logs!" -ForegroundColor Red
                     Write-Host "  Please review the following files for 'Download failed and temporary file' entries:"
@@ -435,7 +435,7 @@ begin {
                         Write-Host "  Report exported to: $newFile"
                     }
                     Write-Host ""
-                }
+                } Else {Write-Host "No suspicious activity found for CVE-2021-26858" -ForegroundColor Green}
                 if ($report.Cve27065.Count -gt 0) {
                     Write-Host "  [CVE-2021-27065] Suspicious activity found in ECP logs!" -ForegroundColor Red
                     Write-Host "  Please review the following files for 'Set-*VirtualDirectory' entries:"
@@ -461,7 +461,7 @@ begin {
                         Write-Host "  Report exported to: $newFile"
                     }
                     Write-Host ""
-                }
+                } Else {Write-Host "No suspicious activity found for CVE-2021-27065" -ForegroundColor Green}
                 if ($report.Suspicious.Count -gt 0) {
                     Write-Host "  Other suspicious files found: $(@($report.Suspicious).Count)"
                     if (-not $DisplayOnly) {
