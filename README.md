@@ -28,9 +28,11 @@ We are committed to working with you through this issue.  Your Microsoft account
 
 Also my famous colleague Rhoderick Mile collected all important links to help you out on this outbreak
 
-[Collected Links For Hafnium – March 2021 Exchange Security Issue](https://blog.rmilne.ca/2021/03/08/collected-links-for-hafnium-march-2021-exchange-security-issue/)
+> [Collected Links For Hafnium – March 2021 Exchange Security Issue](https://blog.rmilne.ca/2021/03/08/collected-links-for-hafnium-march-2021-exchange-security-issue/)
 
 # Patches Download Links
+
+The Exchange Team's below article contain all the links to the Exchange patches for all versions
 
 [Exchange Team Blog Post - Released: March 2021 Exchange Server Security Updates and patch download links for Exchange 2010, 2013, 2016, 2019 patches](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-march-2021-exchange-server-security-updates/ba-p/2175901)
 
