@@ -34,7 +34,7 @@ A script has been released by the Microsoft Support Team ([`Test-ProxyLogon.ps1`
 
 > https://aka.ms/ExOOB-CA
 
-# Rhoderick Milne's collected links
+# Rhoderick Milne's Microsoft Canada's Exchange guru collected links
 
 Also my famous colleague Rhoderick Mile collected all important links to help you out on this outbreak
 
