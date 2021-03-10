@@ -38,18 +38,29 @@ Always install using elevated CMD prompt.  Ensure that all the Exchange tools ar
 
 ## Check Exchange logs to check if you've been compromised
 
+### Scripts to check for possible compromissions
+
+> A script has been released by the Microsoft Support Team ([`Test-ProxyLogon.ps1`](https://github.com/microsoft/CSS-Exchange/tree/main/Security)) that checks if the 4 below breaches have been exploited (CVE-2021-27065, CVE-2021-26857, CVE-2021-26858, CVE-2021-26855)
+> 
+> Other security related scripts are available on the CSS-Exchange Github page:
+> 
+> [CSS-Exchange Github page](https://github.com/microsoft/CSS-Exchange/tree/main/Security)
+
 ### CVE-2021-26855 - check HTTPProxy logs
+
+- this test is included in the `Test-ProxyLogon.ps1` script mentionned above
 
 - usually located in `%PROGRAMFILES%\Microsoft\Exchange Server\V15\Logging\HttpProxy`
 
 - Use powershell or LogParser to browse and find:
-
 
 ```powershell
 Import-Csv -Path (Get-ChildItem -Recurse -Path "$env:PROGRAMFILES\Microsoft\Exchange Server\V15\Logging\HttpProxy" -Filter '*.log').FullName | Where-Object {  $_.AuthenticatedUser -eq '' -and $_.AnchorMailbox -like 'ServerInfo~*/*' } | select DateTime, AnchorMailbox
 ```
 
 ### CVE-2021-26858 - OAB generator log directory
+
+- this test is included in the `Test-ProxyLogon.ps1` script mentionned above
 
 - Directory: %PROGRAMFILES%\Microsoft\Exchange Server\V15\Logging\OABGeneratorLog\*.log
 
@@ -59,24 +70,18 @@ findstr /snip /c:"Download failed and temporary file" "%PROGRAMFILES%\Microsoft\
 
 ### CVE-2021-26857 - Check application event logs
 
+- this test is included in the `Test-ProxyLogon.ps1` script mentionned above
+
 ```powershell
 Get-EventLog -LogName Application -Source "MSExchange Unified Messaging" -EntryType Error | Where-Object { $_.Message -like "*System.InvalidCastException*" }
 ```
 
 ### CVE-2021-27065 - ECP log files
 
+- this test is included in the `Test-ProxyLogon.ps1` script mentionned above
+
 - Directory: `C:\Program Files\Microsoft\Exchange Server\V15\Logging\ECP\Server`
 
 ```powershell
 Select-String -Path "$env:PROGRAMFILES\Microsoft\Exchange Server\V15\Logging\ECP\Server\*.log" -Pattern 'Set-.+VirtualDirectory'
 ```
-
-### Other scripts to check for possible compromissions
-
-> A script has been released by the Microsoft Support Team ([`Test-ProxyLogon.ps1`](https://github.com/microsoft/CSS-Exchange/tree/main/Security)) that checks the 4 detections mentionned above (CVE-2021-27065, CVE-2021-26857, CVE-2021-26858, CVE-2021-26855 check)
-> 
-> Other scripts are available on the CSS-Exchange Github page:
-> 
-> [CSS-Exchange Github page](https://github.com/microsoft/CSS-Exchange/tree/main/Security)
- 
-
