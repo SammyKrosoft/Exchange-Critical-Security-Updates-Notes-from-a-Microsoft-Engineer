@@ -24,7 +24,7 @@ We are committed to working with you through this issue.  Your Microsoft account
 - [Microsoft Security Response Center release - Multiple Security Updates Released for Exchange Server](https://msrc-blog.microsoft.com/2021/03/02/multiple-security-updates-released-for-exchange-server/)
 - [CSS Support: https://support.microsoft.com/](https://support.microsoft.com/)
 
-## Microsoft internal web page **ExHelper** for the procedure to update your servers
+# Microsoft internal web page **ExHelper** for the procedure to update your servers
 
 - Depending on the Exchange server version (2010, 2013, 2016, 2019) and update level (Roll-Up aka RU for Exchange 2010, CU aka Cumulative Update for Exchange 2013/2016/2019), there are specific steps to get your servers up to date to be able to patch these. The below web site gives you the How-To steps based on your server versions deployed on your environment:
 
@@ -36,7 +36,7 @@ The Exchange Team's below article contain all the links to the Exchange patches 
 
 [Exchange Team Blog Post - Released: March 2021 Exchange Server Security Updates and patch download links for Exchange 2010, 2013, 2016, 2019 patches](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-march-2021-exchange-server-security-updates/ba-p/2175901)
 
-# Check Exchange logs to check if you've been compromised
+# Script to check if you've been compromised
 
 A script has been released by the Microsoft Support Team ([`Test-ProxyLogon.ps1`](https://github.com/microsoft/CSS-Exchange/blob/main/Security/Test-ProxyLogon.ps1)) that checks if the 4 below breaches have been exploited (CVE-2021-27065, CVE-2021-26857, CVE-2021-26858, CVE-2021-26855)
 
