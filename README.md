@@ -10,20 +10,6 @@ We also recommend that your security team assess whether or not the vulnerabilit
  
 We are committed to working with you through this issue.  Your Microsoft account and support teams have been fully mobilized.
 
-|Information to assist you and your teams|
-|---|
-|[March 2, 2021 Security Update Release - Release Notes - Security Update Guide - Microsoft](https://msrc.microsoft.com/update-guide/releaseNote/2021-Mar)|
-|[CVE-2021-26412](https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2021-26412)|
-|[CVE-2021-26854](https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2021-26854)|
-|[CVE-2021-26855](https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2021-26855)|
-|[CVE-2021-26857](https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2021-26857)|
-|[CVE-2021-26858](https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2021-26858)|
-|[CVE-2021-27065](https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2021-27065)|
-|[CVE-2021-27078](https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2021-27078)|
- 
-- [Microsoft Security Response Center release - Multiple Security Updates Released for Exchange Server](https://msrc-blog.microsoft.com/2021/03/02/multiple-security-updates-released-for-exchange-server/)
-- [CSS Support: https://support.microsoft.com/](https://support.microsoft.com/)
-
 # Microsoft internal web page **ExHelper** for the procedure to update your servers
 
 - Depending on the Exchange server version (2010, 2013, 2016, 2019) and update level (Roll-Up aka RU for Exchange 2010, CU aka Cumulative Update for Exchange 2013/2016/2019), there are specific steps to get your servers up to date to be able to patch these. The below web site gives you the How-To steps based on your server versions deployed on your environment:
@@ -104,3 +90,19 @@ Get-EventLog -LogName Application -Source "MSExchange Unified Messaging" -EntryT
 ```powershell
 Select-String -Path "$env:PROGRAMFILES\Microsoft\Exchange Server\V15\Logging\ECP\Server\*.log" -Pattern 'Set-.+VirtualDirectory'
 ```
+
+## Links
+
+|Information to assist you and your teams|
+|---|
+|[March 2, 2021 Security Update Release - Release Notes - Security Update Guide - Microsoft](https://msrc.microsoft.com/update-guide/releaseNote/2021-Mar)|
+|[CVE-2021-26412](https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2021-26412)|
+|[CVE-2021-26854](https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2021-26854)|
+|[CVE-2021-26855](https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2021-26855)|
+|[CVE-2021-26857](https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2021-26857)|
+|[CVE-2021-26858](https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2021-26858)|
+|[CVE-2021-27065](https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2021-27065)|
+|[CVE-2021-27078](https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2021-27078)|
+ 
+- [Microsoft Security Response Center release - Multiple Security Updates Released for Exchange Server](https://msrc-blog.microsoft.com/2021/03/02/multiple-security-updates-released-for-exchange-server/)
+- [CSS Support: https://support.microsoft.com/](https://support.microsoft.com/)
