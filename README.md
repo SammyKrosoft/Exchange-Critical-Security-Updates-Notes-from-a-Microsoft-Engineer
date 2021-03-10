@@ -74,7 +74,9 @@ Select-String -Path "$env:PROGRAMFILES\Microsoft\Exchange Server\V15\Logging\ECP
 ### Other scripts to check for possible compromissions
 
 > A script has been released by the Microsoft Support Team ([`Test-ProxyLogon.ps1`](https://github.com/microsoft/CSS-Exchange/tree/main/Security)) that checks the 4 detections mentionned above (CVE-2021-27065, CVE-2021-26857, CVE-2021-26858, CVE-2021-26855 check)
+> 
 > Other scripts are available on the CSS-Exchange Github page:
+> 
 > [CSS-Exchange Github page](https://github.com/microsoft/CSS-Exchange/tree/main/Security)
  
 
