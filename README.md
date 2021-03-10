@@ -52,13 +52,15 @@ The Exchange Team's below article contain all the links to the Exchange patches 
 
 ## Check Exchange logs to check if you've been compromised
 
-### Scripts to check for possible compromissions
+### Check if you've been compromised
 
 A script has been released by the Microsoft Support Team ([`Test-ProxyLogon.ps1`](https://github.com/microsoft/CSS-Exchange/blob/main/Security/Test-ProxyLogon.ps1)) that checks if the 4 below breaches have been exploited (CVE-2021-27065, CVE-2021-26857, CVE-2021-26858, CVE-2021-26855)
 
 > [Other security related scripts are available on the CSS-Exchange Github page](https://github.com/microsoft/CSS-Exchange/tree/main/Security)
 
-### CVE-2021-26855 - check HTTPProxy logs
+### Details of what the script checks
+
+#### CVE-2021-26855 - check HTTPProxy logs
 
 - this test is included in the `Test-ProxyLogon.ps1` script mentionned above
 
@@ -70,7 +72,7 @@ A script has been released by the Microsoft Support Team ([`Test-ProxyLogon.ps1`
 Import-Csv -Path (Get-ChildItem -Recurse -Path "$env:PROGRAMFILES\Microsoft\Exchange Server\V15\Logging\HttpProxy" -Filter '*.log').FullName | Where-Object {  $_.AuthenticatedUser -eq '' -and $_.AnchorMailbox -like 'ServerInfo~*/*' } | select DateTime, AnchorMailbox
 ```
 
-### CVE-2021-26858 - OAB generator log directory
+#### CVE-2021-26858 - OAB generator log directory
 
 - this test is included in the `Test-ProxyLogon.ps1` script mentionned above
 
@@ -80,7 +82,7 @@ Import-Csv -Path (Get-ChildItem -Recurse -Path "$env:PROGRAMFILES\Microsoft\Exch
 findstr /snip /c:"Download failed and temporary file" "%PROGRAMFILES%\Microsoft\Exchange Server\V15\Logging\OABGeneratorLog\*.log"
 ```
 
-### CVE-2021-26857 - Check application event logs
+#### CVE-2021-26857 - Check application event logs
 
 - this test is included in the `Test-ProxyLogon.ps1` script mentionned above
 
@@ -88,7 +90,7 @@ findstr /snip /c:"Download failed and temporary file" "%PROGRAMFILES%\Microsoft\
 Get-EventLog -LogName Application -Source "MSExchange Unified Messaging" -EntryType Error | Where-Object { $_.Message -like "*System.InvalidCastException*" }
 ```
 
-### CVE-2021-27065 - ECP log files
+#### CVE-2021-27065 - ECP log files
 
 - this test is included in the `Test-ProxyLogon.ps1` script mentionned above
 
