@@ -1,6 +1,6 @@
 # Important information regarding Exchange Server (2010, 2013, 2016, 2019) 0-day exploits
 
-Today (Tuesday 2nd March 2021), Microsoft released patches for multiple different on-premises Microsoft Exchange Server zero-day vulnerabilities that are being exploited by a nation-state affiliated group.  The vulnerabilities exist in on-premises Exchange Servers 2010, 2013, 2016, and 2019.  
+On Tuesday 2nd March 2021, Microsoft released patches for multiple different on-premises Microsoft Exchange Server zero-day vulnerabilities that are being exploited by a nation-state affiliated group.  The vulnerabilities exist in on-premises Exchange Servers 2010, 2013, 2016, and 2019.  
  
 Your Microsoft Customer Success Account Manager and Technical Support Teams will be engaging with your technical teams to assist in addressing this issue.  We wanted to ensure you were aware of the situation and would ask that you help drive immediate remediation steps.
  
@@ -24,7 +24,7 @@ We are committed to working with you through this issue.  Your Microsoft account
 |[CVE-2021-27065](https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2021-27065)|
 |[CVE-2021-27078](https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2021-27078)|
  
-- [Exchange Team Blog Post - Released: March 2021 Exchange Server Security Updates and patch download links for Exchange 2010, 2013, 2016, 2019](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-march-2021-exchange-server-security-updates/ba-p/2175901)
+- [Exchange Team Blog Post - Released: March 2021 Exchange Server Security Updates and patch download links for Exchange 2010, 2013, 2016, 2019 patches](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-march-2021-exchange-server-security-updates/ba-p/2175901)
 - [Microsoft Security Response Center release - Multiple Security Updates Released for Exchange Server](https://msrc-blog.microsoft.com/2021/03/02/multiple-security-updates-released-for-exchange-server/)
 - [CSS Support: https://support.microsoft.com/](https://support.microsoft.com/)
 
