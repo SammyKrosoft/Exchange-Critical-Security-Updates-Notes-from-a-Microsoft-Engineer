@@ -30,11 +30,11 @@ A script has been released by the Microsoft Support Team ([`Test-ProxyLogon.ps1`
 > 
 > [Other security related scripts are available on the CSS-Exchange Github page](https://github.com/microsoft/CSS-Exchange/tree/main/Security)
  
-# Microsoft Support Emergency Response Tool (MSERT) to scan Microsoft Exchange Server
+# Does the Test-ProxyLogon.ps1 shows suspicious files ? Run MSERT to be sure !
 
-- In addition to the `Test-ProxyLogon.ps1` script, you can scan the well-known folders using the *Microsoft Support Emergency Response Tool* aka *MSERT*
+- In addition to the `Test-ProxyLogon.ps1` script, you can scan the well-known folders using the *Microsoft Support Emergency Response Tool* aka *MSERT*. The folders `Test-ProxyLogon.ps1` checks are `%ProgramData%` (or `$env:ProgramData` in PowerShell language) for `.7z`, `.zip` and `.rar` archives, and `c:\root` and `%WINDIR%\temp` (or `$env:Windir\temp` in PowerShell language) - you can use the below MSERT only on these folders to buy some time.
 
-> [Defender MERT Guidance and Download links (x86 and x64 versions)](https://github.com/microsoft/CSS-Exchange/blob/main/Security/Defender-MSERT-Guidance.md)
+> [Defender MSERT Guidance and Download links (x86 and x64 versions)](https://github.com/microsoft/CSS-Exchange/blob/main/Security/Defender-MSERT-Guidance.md)
  
 # Microsoft Engineers presentation
 
