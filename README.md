@@ -48,6 +48,9 @@ Also my famous colleague Rhoderick Mile collected all important links to help yo
 
 > [Collected Links For Hafnium – March 2021 Exchange Security Issue](https://blog.rmilne.ca/2021/03/08/collected-links-for-hafnium-march-2021-exchange-security-issue/)
 
+# Nino Bilic's Blog post on the Exchange Team blog
+
+> [Released: March 2021 Exchange Server Security Updates](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-march-2021-exchange-server-security-updates/bc-p/2194515)
 
 # Practical notes
 
