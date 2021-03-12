@@ -10,7 +10,7 @@ We also recommend that your security team assess whether or not the vulnerabilit
  
 We are committed to working with you through this issue.  Your Microsoft account and support teams have been fully mobilized.
 
-# **ExHelper** - THE complete procedure to update your servers
+# **ExHelper** - the complete procedure to update your servers
 
 - Depending on the Exchange server version (2010, 2013, 2016, 2019) and update level (Roll-Up aka RU for Exchange 2010, CU aka Cumulative Update for Exchange 2013/2016/2019), there are specific steps to get your servers up to date to be able to patch these. The below web site gives you the How-To steps based on your server versions deployed on your environment:
 
@@ -20,7 +20,7 @@ We are committed to working with you through this issue.  Your Microsoft account
 
 The Exchange Team's below article contain all the links to the Exchange patches for all versions
 
-[Exchange Team Blog Post - Released: March 2021 Exchange Server Security Updates and patch download links for Exchange 2010, 2013, 2016, 2019 patches](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-march-2021-exchange-server-security-updates/ba-p/2175901)
+> [Exchange Team Blog Post - Released: March 2021 Exchange Server Security Updates and patch download links for Exchange 2010, 2013, 2016, 2019 patches](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-march-2021-exchange-server-security-updates/ba-p/2175901)
 
 # Have you been compromised ?
 
