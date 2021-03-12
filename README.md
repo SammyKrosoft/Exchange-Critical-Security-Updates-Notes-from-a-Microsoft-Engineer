@@ -1,12 +1,14 @@
 # Important information regarding Exchange Server (2010, 2013, 2016, 2019) 0-day exploits
 
+*Updated - important note about MSERT scanner - download a new version each time you plan to scan your servers*
+
 On Tuesday 2nd March 2021, Microsoft released patches for multiple different on-premises Microsoft Exchange Server zero-day vulnerabilities that are being exploited by a nation-state affiliated group.  The vulnerabilities exist in on-premises Exchange Servers 2010, 2013, 2016, and 2019.  
  
 Your Microsoft Customer Success Account Manager and Technical Support Teams will be engaging with your technical teams to assist in addressing this issue.  We wanted to ensure you were aware of the situation and would ask that you help drive immediate remediation steps.
  
 For on-premises Exchange Servers, we ask that you direct your teams to start immediate action to assess your Exchange infrastructure and patch vulnerable servers, with the first priority being servers which are accessible from the Internet (e.g., servers publishing Outlook on the web/OWA and ECP).  To patch these vulnerabilities, you should move to the latest Exchange Cumulative Updates and then install the relevant security updates on each Exchange Server.  You can use the [Exchange Server Health Checker script's latest release, which can be downloaded from GitHub](https://github.com/dpaulson45/HealthChecker/releases/latest). Running this script will tell you if you are behind on your on-premises Exchange Server updates (note that the script does not support Exchange Server 2010). 
  
-We also recommend that your security team assess whether or not the vulnerabilities were being exploited by using the Indicators of Compromise we shared here (see below **Check Exchange logs to check if you've been compromised** part)
+We also recommend that your security team assess whether or not the vulnerabilities were being exploited by using the Indicators of Compromise we shared here (see below **Check Exchange logs to check if you've been compromised** part, especially the `Test-ProxyLogon.ps1` script)
  
 We are committed to working with you through this issue.  Your Microsoft account and support teams have been fully mobilized.
 
@@ -30,9 +32,11 @@ A script has been released by the Microsoft Support Team ([`Test-ProxyLogon.ps1`
 > 
 > [Other security related scripts are available on the CSS-Exchange Github page](https://github.com/microsoft/CSS-Exchange/tree/main/Security)
  
-# Does the Test-ProxyLogon.ps1 shows suspicious files ? Run MSERT to be sure !
+# Does the Test-ProxyLogon.ps1 show suspicious files ? Run MSERT to be sure !
 
 - In addition to the `Test-ProxyLogon.ps1` script, you can scan the well-known folders using the *Microsoft Support Emergency Response Tool* aka *MSERT*. The folders `Test-ProxyLogon.ps1` checks are `%ProgramData%` (or `$env:ProgramData` in PowerShell language) for `.7z`, `.zip` and `.rar` archives, and `c:\root` and `%WINDIR%\temp` (or `$env:Windir\temp` in PowerShell language) - you can use the below MSERT only on these folders to buy some time.
+
+> **IMPORTANT: Download a new version each time you scan, don't re-use an older verison, even if it's from the day before ! Signatures are updated very often, sometimes twice daily, to ensure EVERY malicious files are detected**
 
 > [Defender MSERT Guidance and Download links (x86 and x64 versions)](https://github.com/microsoft/CSS-Exchange/blob/main/Security/Defender-MSERT-Guidance.md)
  
