@@ -8,7 +8,7 @@ Your Microsoft Customer Success Account Manager and Technical Support Teams will
  
 For on-premises Exchange Servers, we ask that you direct your teams to start immediate action to assess your Exchange infrastructure and patch vulnerable servers, with the first priority being servers which are accessible from the Internet (e.g., servers publishing Outlook on the web/OWA and ECP).  To patch these vulnerabilities, you should move to the latest Exchange Cumulative Updates and then install the relevant security updates on each Exchange Server.  You can use the [Exchange Server Health Checker script's latest release, which can be downloaded from GitHub](https://github.com/dpaulson45/HealthChecker/releases/latest). Running this script will tell you if you are behind on your on-premises Exchange Server updates (note that the script does not support Exchange Server 2010). 
  
-We also recommend that your security team assess whether or not the vulnerabilities were being exploited by using the Indicators of Compromise we shared here (see below **Check Exchange logs to check if you've been compromised** part, especially the `Test-ProxyLogon.ps1` script)
+We also recommend that your security team assess whether or not the vulnerabilities were being exploited by using the Indicators of Compromise we shared here (see below **Have you been compromised ?** part, especially the `Test-ProxyLogon.ps1` script - link to the latest version provided here)
  
 We are committed to working with you through this issue.  Your Microsoft account and support teams have been fully mobilized.
 
