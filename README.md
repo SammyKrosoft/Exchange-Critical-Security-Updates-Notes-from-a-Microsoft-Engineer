@@ -1,5 +1,7 @@
 # Important information regarding Exchange Server (2010, 2013, 2016, 2019) 0-day exploits
 
+*Update: Exchange 2016 CU20 and Exchange 2019 CU9 are out since 16th March 2021, and include the 0-day vulnerability patch !!*
+*Update: New **Guidance for responders** article from the Microsoft Exchange Product Team for investigating and remediating the 0-day vulnerability*
 *Update: important note about MSERT scanner - download a new version each time you plan to scan your servers to get the latest signatures*
 
 On Tuesday 2nd March 2021, Microsoft released patches for multiple different on-premises Microsoft Exchange Server zero-day vulnerabilities that are being exploited by a nation-state affiliated group.  The vulnerabilities exist in on-premises Exchange Servers 2010, 2013, 2016, and 2019.  
@@ -34,7 +36,7 @@ A script has been released by the Microsoft Support Team ([`Test-ProxyLogon.ps1`
  
 # Guidance for responders: Investigating and remediating on-premises Exchange Server vulnerabilities
 
-[Publication from Microsoft Exchange Team 16th March 2021](https://msrc-blog.microsoft.com/2021/03/16/guidance-for-responders-investigating-and-remediating-on-premises-exchange-server-vulnerabilities/#How_does_the_attack_work)
+[Guidance for responders: Publication from Microsoft Exchange Team 16th March 2021](https://msrc-blog.microsoft.com/2021/03/16/guidance-for-responders-investigating-and-remediating-on-premises-exchange-server-vulnerabilities/#How_does_the_attack_work)
 
 # Does the Test-ProxyLogon.ps1 show suspicious files ? Run MSERT to be sure !
 
