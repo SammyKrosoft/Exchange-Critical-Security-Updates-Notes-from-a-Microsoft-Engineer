@@ -1,16 +1,18 @@
 # Important information regarding Exchange Server (2010, 2013, 2016, 2019) 0-day exploits
 
+*Update: important note about MSERT scanner - download a new version each time you plan to scan your servers to get the latest signatures*
+
 On Tuesday 2nd March 2021, Microsoft released patches for multiple different on-premises Microsoft Exchange Server zero-day vulnerabilities that are being exploited by a nation-state affiliated group.  The vulnerabilities exist in on-premises Exchange Servers 2010, 2013, 2016, and 2019.  
  
 Your Microsoft Customer Success Account Manager and Technical Support Teams will be engaging with your technical teams to assist in addressing this issue.  We wanted to ensure you were aware of the situation and would ask that you help drive immediate remediation steps.
  
 For on-premises Exchange Servers, we ask that you direct your teams to start immediate action to assess your Exchange infrastructure and patch vulnerable servers, with the first priority being servers which are accessible from the Internet (e.g., servers publishing Outlook on the web/OWA and ECP).  To patch these vulnerabilities, you should move to the latest Exchange Cumulative Updates and then install the relevant security updates on each Exchange Server.  You can use the [Exchange Server Health Checker script's latest release, which can be downloaded from GitHub](https://github.com/dpaulson45/HealthChecker/releases/latest). Running this script will tell you if you are behind on your on-premises Exchange Server updates (note that the script does not support Exchange Server 2010). 
  
-We also recommend that your security team assess whether or not the vulnerabilities were being exploited by using the Indicators of Compromise we shared here (see below **Check Exchange logs to check if you've been compromised** part)
+We also recommend that your security team assess whether or not the vulnerabilities were being exploited by using the Indicators of Compromise we shared here (see below **Have you been compromised ?** part, especially the `Test-ProxyLogon.ps1` script - link to the latest version provided here)
  
 We are committed to working with you through this issue.  Your Microsoft account and support teams have been fully mobilized.
 
-# **ExHelper** - THE complete procedure to update your servers
+# **ExHelper** - the complete procedure to update your servers
 
 - Depending on the Exchange server version (2010, 2013, 2016, 2019) and update level (Roll-Up aka RU for Exchange 2010, CU aka Cumulative Update for Exchange 2013/2016/2019), there are specific steps to get your servers up to date to be able to patch these. The below web site gives you the How-To steps based on your server versions deployed on your environment:
 
@@ -20,18 +22,31 @@ We are committed to working with you through this issue.  Your Microsoft account
 
 The Exchange Team's below article contain all the links to the Exchange patches for all versions
 
-[Exchange Team Blog Post - Released: March 2021 Exchange Server Security Updates and patch download links for Exchange 2010, 2013, 2016, 2019 patches](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-march-2021-exchange-server-security-updates/ba-p/2175901)
+> [Exchange Team Blog Post - Released: March 2021 Exchange Server Security Updates and patch download links for Exchange 2010, 2013, 2016, 2019 patches](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-march-2021-exchange-server-security-updates/ba-p/2175901)
 
 # Have you been compromised ?
 
-A script has been released by the Microsoft Support Team ([`Test-ProxyLogon.ps1`](https://github.com/microsoft/CSS-Exchange/blob/main/Security/Test-ProxyLogon.ps1)) that checks if the 4 below breaches have been exploited (CVE-2021-27065, CVE-2021-26857, CVE-2021-26858, CVE-2021-26855)
+A script has been released by the Microsoft Support Team ([`Test-ProxyLogon.ps1`](https://github.com/microsoft/CSS-Exchange/releases/latest/download/Test-ProxyLogon.ps1)) that checks if the 4 below breaches have been exploited (CVE-2021-27065, CVE-2021-26857, CVE-2021-26858, CVE-2021-26855)
 
+> [Direct download link to the latest version of Test-ProxyLogon.ps1](https://github.com/microsoft/CSS-Exchange/releases/latest/download/Test-ProxyLogon.ps1)
+> 
 > [Other security related scripts are available on the CSS-Exchange Github page](https://github.com/microsoft/CSS-Exchange/tree/main/Security)
  
+<<<<<<< HEAD
 # Guidance for responders: Investigating and remediating on-premises Exchange Server vulnerabilities
 
 [Publication from Microsoft Exchange Team 16th March 2021](https://msrc-blog.microsoft.com/2021/03/16/guidance-for-responders-investigating-and-remediating-on-premises-exchange-server-vulnerabilities/#How_does_the_attack_work)
 
+=======
+# Does the Test-ProxyLogon.ps1 show suspicious files ? Run MSERT to be sure !
+
+- In addition to the `Test-ProxyLogon.ps1` script, you can scan the well-known folders using the *Microsoft Support Emergency Response Tool* aka *MSERT*. The folders `Test-ProxyLogon.ps1` checks are `%ProgramData%` (or `$env:ProgramData` in PowerShell language) for `.7z`, `.zip` and `.rar` archives, and `c:\root` and `%WINDIR%\temp` (or `$env:Windir\temp` in PowerShell language) - you can use the below MSERT only on these folders to buy some time.
+
+> **IMPORTANT: Download a new version each time you scan, don't re-use an older verison, even if it's from the day before ! Signatures are updated very often, sometimes twice daily, to ensure EVERY malicious files are detected**
+
+> [Defender MSERT Guidance and Download links (x86 and x64 versions)](https://github.com/microsoft/CSS-Exchange/blob/main/Security/Defender-MSERT-Guidance.md)
+ 
+>>>>>>> cf45342b9d673e939e20209ebcc01fb452476b9b
 # Microsoft Engineers presentation
 
 - This is a presentation summarizing how the exploit work, and what to do
@@ -44,6 +59,9 @@ Also my famous colleague Rhoderick Mile collected all important links to help yo
 
 > [Collected Links For Hafnium – March 2021 Exchange Security Issue](https://blog.rmilne.ca/2021/03/08/collected-links-for-hafnium-march-2021-exchange-security-issue/)
 
+# Nino Bilic's Blog post on the Exchange Team blog
+
+> [Released: March 2021 Exchange Server Security Updates](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-march-2021-exchange-server-security-updates/bc-p/2194515)
 
 # Practical notes
 
