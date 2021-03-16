@@ -32,12 +32,10 @@ A script has been released by the Microsoft Support Team ([`Test-ProxyLogon.ps1`
 > 
 > [Other security related scripts are available on the CSS-Exchange Github page](https://github.com/microsoft/CSS-Exchange/tree/main/Security)
  
-<<<<<<< HEAD
 # Guidance for responders: Investigating and remediating on-premises Exchange Server vulnerabilities
 
 [Publication from Microsoft Exchange Team 16th March 2021](https://msrc-blog.microsoft.com/2021/03/16/guidance-for-responders-investigating-and-remediating-on-premises-exchange-server-vulnerabilities/#How_does_the_attack_work)
 
-=======
 # Does the Test-ProxyLogon.ps1 show suspicious files ? Run MSERT to be sure !
 
 - In addition to the `Test-ProxyLogon.ps1` script, you can scan the well-known folders using the *Microsoft Support Emergency Response Tool* aka *MSERT*. The folders `Test-ProxyLogon.ps1` checks are `%ProgramData%` (or `$env:ProgramData` in PowerShell language) for `.7z`, `.zip` and `.rar` archives, and `c:\root` and `%WINDIR%\temp` (or `$env:Windir\temp` in PowerShell language) - you can use the below MSERT only on these folders to buy some time.
@@ -46,7 +44,6 @@ A script has been released by the Microsoft Support Team ([`Test-ProxyLogon.ps1`
 
 > [Defender MSERT Guidance and Download links (x86 and x64 versions)](https://github.com/microsoft/CSS-Exchange/blob/main/Security/Defender-MSERT-Guidance.md)
  
->>>>>>> cf45342b9d673e939e20209ebcc01fb452476b9b
 # Microsoft Engineers presentation
 
 - This is a presentation summarizing how the exploit work, and what to do
