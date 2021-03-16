@@ -28,6 +28,10 @@ A script has been released by the Microsoft Support Team ([`Test-ProxyLogon.ps1`
 
 > [Other security related scripts are available on the CSS-Exchange Github page](https://github.com/microsoft/CSS-Exchange/tree/main/Security)
  
+# Guidance for responders: Investigating and remediating on-premises Exchange Server vulnerabilities
+
+[Publication from Microsoft Exchange Team 16th March 2021](https://msrc-blog.microsoft.com/2021/03/16/guidance-for-responders-investigating-and-remediating-on-premises-exchange-server-vulnerabilities/#How_does_the_attack_work)
+
 # Microsoft Engineers presentation
 
 - This is a presentation summarizing how the exploit work, and what to do
