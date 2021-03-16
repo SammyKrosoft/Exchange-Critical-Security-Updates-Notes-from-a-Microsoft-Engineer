@@ -1,10 +1,10 @@
 # Important information regarding Exchange Server (2010, 2013, 2016, 2019) 0-day exploits
 
-*Update: Exchange 2016 CU20 and Exchange 2019 CU9 are out since 16th March 2021, and include the 0-day vulnerability patch !!*
+> *Update: Exchange 2016 CU20 and Exchange 2019 CU9 are out since 16th March 2021, and include the 0-day vulnerability patch !!*
 
-*Update: New **Guidance for responders** article from the Microsoft Exchange Product Team for investigating and remediating the 0-day vulnerability*
+> *Update: New **Guidance for responders** article from the Microsoft Exchange Product Team for investigating and remediating the 0-day vulnerability*
 
-*Update: important note about MSERT scanner - download a new version each time you plan to scan your servers to get the latest signatures*
+> *Update: important note about MSERT scanner - download a new version each time you plan to scan your servers to get the latest signatures*
 
 On Tuesday 2nd March 2021, Microsoft released patches for multiple different on-premises Microsoft Exchange Server zero-day vulnerabilities that are being exploited by a nation-state affiliated group.  The vulnerabilities exist in on-premises Exchange Servers 2010, 2013, 2016, and 2019.  
  
