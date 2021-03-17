@@ -27,7 +27,7 @@ We are committed to working with you through this issue.  Your Microsoft account
 > **UPDATE: Exchange 2016 CU20 and Exchange 2019 CU9 are out since 16th March 2021, and these include the 0-day vulnerability patch !**
 > [Download links to all CUs with the Exchange Build numbers article here !](https://docs.microsoft.com/en-us/exchange/new-features/build-numbers-and-release-dates?view=exchserver-2019)
 
-The Exchange Team's below article contain all the links to the Exchange patches for Exchange 2016 CU19 and older for Exchange 2019 CU8 and older:
+The Exchange Team's below article contain all the links to the Exchange patches for Exchange 2016 CU19 and older as well as for Exchange 2019 CU8 and older:
 
 > [Exchange Team Blog Post - Released: March 2021 Exchange Server Security Updates and patch download links for Exchange 2010, 2013, 2016, 2019 patches](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-march-2021-exchange-server-security-updates/ba-p/2175901)
 
