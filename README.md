@@ -1,5 +1,5 @@
 # Important information regarding Exchange Server (2010, 2013, 2016, 2019) 0-day exploits
-*updated 16th March 2021
+*updated 16th March 2021*
 
 > *Update: [Exchange 2016 CU20 and Exchange 2019 CU9](https://docs.microsoft.com/en-us/exchange/new-features/build-numbers-and-release-dates?view=exchserver-2019) are out since 16th March 2021, and include the 0-day vulnerability patch !!*
 
