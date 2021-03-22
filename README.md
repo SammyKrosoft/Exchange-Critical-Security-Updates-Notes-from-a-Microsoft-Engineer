@@ -54,7 +54,7 @@ A script has been released by the Microsoft Support Team ([`Test-ProxyLogon.ps1`
 
 [Guidance for responders: Publication from Microsoft Exchange Team 16th March 2021](https://msrc-blog.microsoft.com/2021/03/16/guidance-for-responders-investigating-and-remediating-on-premises-exchange-server-vulnerabilities/#How_does_the_attack_work)
 
-# Learn more about Scott Schnoll video about how to respond to these type of threats
+# Learn more with Scott Schnoll video: how to respond to these type of threats
 
 [Responding to “ProxyLogon” Exchange CVE attacks](https://www.youtube.com/watch?v=w-L3gi4Cexo&list=PL3ZTgFEc7Lytavbz30fR2J8qQYVGW83me)
 
