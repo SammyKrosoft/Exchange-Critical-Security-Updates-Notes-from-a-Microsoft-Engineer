@@ -1,5 +1,5 @@
 # Important information regarding Exchange Server (2010, 2013, 2016, 2019) 0-day exploits
-*updated 22nd March 2021*
+*Updated 22nd March 2021*
 
 > *Update: added Youtube video link to Scott Schnoll __Responding to “ProxyLogon” Exchange CVE attacks__ (see later on this page)*
 
