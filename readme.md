@@ -1,11 +1,11 @@
 # Exchange Important Security Updates
-**Updated 13th July 2021**
+*Updated 13th July 2021*
 
-In this repository I would like to highlight important Exchange Server specific security updates as they are announced by Microsoft.
+In this repository I would like to highlight important Exchange Server specific security updates as they are announced by Microsoft within the [Security Update Guide](https://msrc.microsoft.com/update-guide).
 
 I will update this Readme as I add articles to this repository.
 
-# Latest security issues
+# Latest Exchange Server specific security issues
 
 ## [13 July 2021 Vulnerability issues page](https://github.com/SammyKrosoft/Exchange-Critical-Security-Updates-Notes-from-a-Microsoft-Engineer/blob/main/July-13-2021-Vulnerability.md)
 
