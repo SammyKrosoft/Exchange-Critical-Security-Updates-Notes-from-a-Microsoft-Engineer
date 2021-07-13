@@ -1,4 +1,5 @@
 # Exchange Important Security Updates
+**Updated 13th July 2021**
 
 In this repository I would like to highlight important Exchange Server specific security updates as they are announced by Microsoft.
 
