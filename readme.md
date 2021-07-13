@@ -1,7 +1,7 @@
 # Exchange Important Security Updates
 *Updated 13th July 2021*
 
-In this repository I would like to highlight important Exchange Server specific security updates as they are announced by Microsoft within the <a href="https://msrc.microsoft.com/update-guide" target="_blank">Security Update Guide</a>.
+In this repository I would like to highlight important Exchange Server specific security updates as they are announced by Microsoft within the [Security Update Guide](https://msrc.microsoft.com/update-guide).
 
 I will update this Readme as I add articles to this repository.
 
