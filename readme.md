@@ -47,4 +47,13 @@ And the other one (15.01.2044.004):
 
 ==> My server E2016-01 is at CU17 (need to update ASAP !)
 
+After updating E2016-01, I can check the versions again:
 
+```output
+ProductVersion   FileVersion      FileName                            PSComputerName
+--------------   -----------      --------                            --------------
+15.01.2308.014   15.01.2308.014   C:\Program Files\Microsoft\Excha... E2016-01
+15.01.2308.008   15.01.2308.008   C:\Program Files\Microsoft\Excha... E2016-02
+```
+
+*Note: E2016-01 is up to date with Exchange 2016 CU21 + July 2021 security update (note the .014 suffix), and E2016-01 just has CU21 (note the .008 suffix)*
