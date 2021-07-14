@@ -41,7 +41,7 @@ Example finding my CU level with the above example:
 
 ==> My server E2016-02 is at CU21 without the July 2021 security fix
 
-And the ovher one (15.01.2044.004):
+And the other one (15.01.2044.004):
 
 <img src = "https://user-images.githubusercontent.com/33433229/125547168-b23686d5-9160-4961-ab57-8624369ac27b.png" width = 600>
 
