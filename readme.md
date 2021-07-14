@@ -13,6 +13,15 @@ I will update this Readme as I add articles to this repository.
 
 ## [March 2021 vulnerability fixes (Hafnium attacks)](https://github.com/SammyKrosoft/Exchange-Critical-Security-Updates-Notes-from-a-Microsoft-Engineer/blob/main/March-2021-Hafnium-Attacks-Protection.md)
 
+# TIP: Quick script to get your Exchange Servers exact version numbers
+
+```powershell
+$ExchangeServers = Get-ExchangeServer | Sort-Object Name
+ForEach ($Server in $ExchangeServers) {
+    Invoke-Command -ComputerName $Server.Name -ScriptBlock { Get-Command Exsetup.exe | ForEach-Object { $_.FileversionInfo } }
+}
+```
+
 # Useful links (CTRL + Click to open in a new tab)
 
 ## [Exchange build numbers and all CUs download links](https://docs.microsoft.com/en-us/exchange/new-features/build-numbers-and-release-dates?view=exchserver-2019)
