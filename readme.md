@@ -31,6 +31,6 @@ ProductVersion   FileVersion      FileName                            PSComputer
 15.01.2308.008   15.01.2308.008   C:\Program Files\Microsoft\Excha... E2016-02                          
 ```
 
-# Useful links (CTRL + Click to open in a new tab)
+## Compare the versions you get from the above with the numbers on the below link:
 
 ## [Exchange build numbers and all CUs download links](https://docs.microsoft.com/en-us/exchange/new-features/build-numbers-and-release-dates?view=exchserver-2019)
