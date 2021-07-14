@@ -13,6 +13,10 @@ I will update this Readme as I add articles to this repository.
 
 ## [March 2021 vulnerability fixes (Hafnium attacks)](https://github.com/SammyKrosoft/Exchange-Critical-Security-Updates-Notes-from-a-Microsoft-Engineer/blob/main/March-2021-Hafnium-Attacks-Protection.md)
 
+# Check your servers health with dpaulson's Health Checker
+
+## [Link to dpaulon's health checker script page](https://microsoft.github.io/CSS-Exchange/Diagnostics/HealthChecker/)
+
 # TIP: Quick script to get your Exchange Servers exact version numbers
 
 ```powershell
