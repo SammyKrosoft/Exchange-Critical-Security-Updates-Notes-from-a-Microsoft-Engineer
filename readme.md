@@ -34,3 +34,13 @@ ProductVersion   FileVersion      FileName                            PSComputer
 ## Compare the versions you get from the above with the numbers on the below link:
 
 ## [Exchange build numbers and all CUs download links](https://docs.microsoft.com/en-us/exchange/new-features/build-numbers-and-release-dates?view=exchserver-2019)
+
+Example finding my CU level with the above example:
+
+<img src = https://user-images.githubusercontent.com/33433229/125547107-9a243329-43fc-4435-b32b-8613d5fc1a74.png width = 600>
+
+And the ovher one (15.01.2044.004):
+
+<img src = "https://user-images.githubusercontent.com/33433229/125547168-b23686d5-9160-4961-ab57-8624369ac27b.png" width = 600
+
+
