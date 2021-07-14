@@ -22,6 +22,15 @@ ForEach ($Server in $ExchangeServers) {
 }
 ```
 
+Sample output (my Lab):
+
+```output
+ProductVersion   FileVersion      FileName                            PSComputerName                    
+--------------   -----------      --------                            --------------                    
+15.01.2044.004   15.01.2044.004   C:\Program Files\Microsoft\Excha... E2016-01                          
+15.01.2308.008   15.01.2308.008   C:\Program Files\Microsoft\Excha... E2016-02                          
+```
+
 # Useful links (CTRL + Click to open in a new tab)
 
 ## [Exchange build numbers and all CUs download links](https://docs.microsoft.com/en-us/exchange/new-features/build-numbers-and-release-dates?view=exchserver-2019)
