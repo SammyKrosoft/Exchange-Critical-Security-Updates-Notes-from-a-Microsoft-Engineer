@@ -60,4 +60,4 @@ ProductVersion   FileVersion      FileName                            PSComputer
 15.01.2308.008   15.01.2308.008   C:\Program Files\Microsoft\Excha... E2016-02
 ```
 
-*Note: E2016-01 is up to date with Exchange 2016 CU21 + July 2021 security update (note the .014 suffix), and E2016-01 just has CU21 (note the .008 suffix)*
+=> my E2016-01 server is up to date with Exchange 2016 CU21 + July 2021 security update (note the .014 suffix), and E2016-01 just has CU21 (note the .008 suffix)
